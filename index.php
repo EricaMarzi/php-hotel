@@ -12,11 +12,11 @@
     <h2>Hotels</h2>
     <?php foreach ($hotels as $hotel) : ?>
         <ul class="list-unstyled">
-            <li><?php $hotel['name'] ?></li>
-            <li><?php $hotel['description'] ?></li>
-            <li><?php $hotel['parking'] ?></li>
-            <li><?php $hotel['vote'] ?></li>
-            <li><?php $hotel['distance_to_center'] ?></li>
+            <li><?= $hotel['name'] ?></li>
+            <li><?= $hotel['description'] ?></li>
+            <li><?= $hotel['parking'] ? 'Yes' : 'No' ?></li>
+            <li><?= $hotel['vote'] ?></li>
+            <li><?= $hotel['distance_to_center'] ?></li>
         </ul>
     <?php endforeach ?>
 </div>
